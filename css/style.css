@@ -38,9 +38,9 @@ nav {
   border-radius: 5px;
   display: inline-block;
   height: 4px;
-  width: 100px;
+  width: 15vw;
   vertical-align: middle;
-  margin: 20px;
+  margin: 18px;
   position: relative;
   bottom: 9px;
 }
@@ -112,14 +112,25 @@ form {
   padding: 0 90px;
 }
 
+footer {
+  color: white;
+}
+
+.footer-bottom {
+  background-color: #2c3e50;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 12px;
+}
+
 /* MEDIAQUERY */
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 40px;
+    font-size: 42px;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .freelancer-jumbotron p {
@@ -127,6 +138,6 @@ form {
   }
 
   .star::before, .star::after {
-    width: 160px;
+    width: 150px;
   }
 }
