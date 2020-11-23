@@ -1,10 +1,10 @@
 h1 {
-  font-size: 42px;
+  font-size: 36px;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -38,9 +38,9 @@ nav {
   border-radius: 5px;
   display: inline-block;
   height: 4px;
-  width: 15vw;
+  width: 100px;
   vertical-align: middle;
-  margin: 25px;
+  margin: 20px;
   position: relative;
   bottom: 9px;
 }
@@ -54,7 +54,8 @@ nav {
 }
 
 .freelancer-jumbotron p {
-  font-size: 22px;
+  font-size: 16px;
+  margin: 0;
 }
 
 section {
@@ -110,4 +111,25 @@ form {
 
 section .btn {
   text-align: left;
+}
+
+/* MEDIAQUERY */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  .freelancer-jumbotron p {
+    font-size: 22px;
+  }
+
+  .star::before, .star::after {
+    width: 160px;
+  }
+
+
 }
