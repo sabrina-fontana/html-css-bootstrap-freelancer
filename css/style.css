@@ -1,3 +1,13 @@
+h1 {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -16,11 +26,6 @@ nav {
 
 .freelancer-jumbotron img {
   height: 250px;
-}
-
-.freelancer-jumbotron h1 {
-  font-size: 52px;
-  font-weight: bold;
 }
 
 .star i {
@@ -52,7 +57,7 @@ nav {
   font-size: 24px;
 }
 
-.section1 {
+section {
   text-align: center;
   padding: 50px 0;
 }
@@ -60,4 +65,32 @@ nav {
 .section1 img {
   border-radius: 30px;
   padding: 15px;
+}
+
+.section2 {
+  background-color: #1abc9c;
+  color: white;
+  text-align: center;
+}
+
+.section2 .text {
+  text-align: left;
+  font-size: 19px;
+}
+
+.section2 .text.left {
+  padding-left: 250px;
+}
+
+.section2 .text.right {
+  padding-right: 250px;
+}
+
+.section2 .btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 30px;
 }
