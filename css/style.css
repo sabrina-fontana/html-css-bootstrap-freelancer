@@ -1,8 +1,3 @@
-.no-padding {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 h1 {
   font-size: 34px;
   font-weight: bold;
@@ -13,8 +8,8 @@ h2 {
   font-weight: bold;
 }
 
-.uppercase {
-  text-transform: uppercase;
+.text-white {
+  color: white;
 }
 
 nav {
@@ -24,7 +19,6 @@ nav {
 
 .freelancer-jumbotron {
   background-color: #1abc9c;
-  color: white;
   text-align: center;
   padding: 50px 10px;
 }
@@ -63,7 +57,7 @@ nav {
   margin: 0;
 }
 
-section {
+[class*="section"] {
   padding: 50px 0;
 }
 
@@ -78,7 +72,6 @@ section {
 
 .section2 {
   background-color: #1abc9c;
-  color: white;
 }
 
 .section2 .text {
@@ -89,10 +82,17 @@ section {
 
 .section2 .btn {
   background-color: transparent;
-  color: white;
   border: 1px solid white;
   font-size: 16px;
   margin-top: 30px;
+}
+
+.download-btn {
+  text-align: center;
+}
+
+.bl-form ::placeholder {
+  color: #2c3e50;
 }
 
 input, textarea {
@@ -103,7 +103,6 @@ input, textarea {
 }
 
 .section3 .btn {
-  color: white;
   background-color: #1abc9c;
   font-size: 16px;
   margin-top: 10px;
@@ -118,12 +117,23 @@ form {
 }
 
 footer {
-  color: white;
   text-align: center;
 }
 
 .footer-top {
   background-color: #3a546d;
+}
+
+.footer-top [class*="col-"] {
+  padding: 20px 30px;
+}
+
+footer .social i {
+  line-height: 35px;
+  margin: 5px 4px;
+  border: 1px solid white;
+  width: 35px;
+  height: 35px;
 }
 
 .footer-bottom {
@@ -148,5 +158,25 @@ footer {
 
   .star::before, .star::after {
     width: 150px;
+  }
+
+  .footer-top>div:first-child {
+    padding-left: 60px;
+  }
+
+  .footer-top>div:last-child {
+    padding-right: 60px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer-top>div:first-child {
+    padding-left: 150px;
+    padding-right: 0;
+  }
+
+  .footer-top>div:last-child {
+    padding-right: 150px;
+    padding-left: 0;
   }
 }

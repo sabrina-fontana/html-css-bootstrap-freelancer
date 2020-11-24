@@ -10,87 +10,86 @@
   </head>
   <body>
     <!-- contenitore della pagina -->
-    <div class="container-fluid no-padding">
+    <div class="container-fluid">
       <!-- inizio intestazione -->
       <header>
-        <nav></nav>
-        <div class="freelancer-jumbotron">
+        <!-- navbar -->
+        <nav class="row"></nav>
+        <!-- jumbotron -->
+        <div class="row freelancer-jumbotron text-white">
           <img src="img/jumbotron.svg" alt="jumbotron image">
-          <h1 class="uppercase">start bootstrap</h1>
+          <h1 class="text-uppercase">start bootstrap</h1>
           <div class="star white-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-          <p class="uppercase">graphic artist - web designer - illustrator</p>
+          <p class="text-uppercase">graphic artist - web designer - illustrator</p>
         </div>
       </header>
       <!-- fine intestazione -->
       <!-- inizio parte centrale -->
       <main>
         <!-- inizio prima sezione -->
-        <section>
-          <div class="section1 container">
-            <h2 class="uppercase">portfolio</h2>
-            <div class="star dark-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-            <div class="row">
-              <img class="col-xs-12 col-sm-6 col-md-4" src="img/image1.png" alt="">
-              <img class="col-xs-12 col-sm-6 col-md-4" src="img/image2.png" alt="">
-              <img class="col-xs-12 col-sm-6 col-md-4" src="img/image3.png" alt="">
-              <img class="col-xs-12 col-sm-6 col-md-4" src="img/image4.png" alt="">
-              <img class="col-xs-12 col-sm-6 col-md-4" src="img/image5.png" alt="">
-              <img class="col-xs-12 col-sm-6 col-md-4" src="img/image6.png" alt="">
-            </div>
-          </div>
-        </section>
+        <div class="section1 row">
+          <h2 class="text-uppercase">portfolio</h2>
+          <div class="star dark-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+          <img class="col-xs-12 col-sm-6 col-md-4" src="img/image1.png" alt="">
+          <img class="col-xs-12 col-sm-6 col-md-4" src="img/image2.png" alt="">
+          <img class="col-xs-12 col-sm-6 col-md-4" src="img/image3.png" alt="">
+          <img class="col-xs-12 col-sm-6 col-md-4" src="img/image4.png" alt="">
+          <img class="col-xs-12 col-sm-6 col-md-4" src="img/image5.png" alt="">
+          <img class="col-xs-12 col-sm-6 col-md-4" src="img/image6.png" alt="">
+        </div>
         <!-- fine prima sezione -->
         <!-- inizio seconda sezione -->
-        <section class="section2">
-          <div class="container">
-            <h2 class="uppercase">about</h2>
-            <div class="star white-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-            <div class="row">
-              <div class="text left col-xs-8 col-xs-offset-2 col-sm-offset-1 col-sm-5">
-                Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS and JavaScript as well as optional LESS stylesheets for easy customization.
-              </div>
-              <div class="text right col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5">
-                Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
-              </div>
-              <div class="row">
-                <div class="col-xs-12"><a href="#" class="btn" role="button"><i class="fa fa-download" aria-hidden="true"></i> Download</a></div>
-              </div>
-            </div>
+        <div class="section2 row text-white">
+          <h2 class="text-uppercase">about</h2>
+          <div class="star white-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+          <div class="text col-xs-8 col-xs-offset-2 col-sm-offset-1 col-sm-5">
+            Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS and JavaScript as well as optional LESS stylesheets for easy customization.
           </div>
-        </section>
+          <div class="text col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5">
+            Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+          </div>
+          <div class="col-xs-12">
+            <button type="button" class="btn download-btn text-white">Download</button>
+          </div>
+        </div>
         <!-- fine seconda sezione -->
         <!-- inizio terza sezione -->
-        <section class="section3">
-          <div class="container">
-            <h2 class="uppercase">contact me</h2>
-            <div class="star dark-star"><i class="fa fa-star" aria-hidden="true"></i></div>
-            <form class="" action="index.html" method="post">
-              <input type="text" placeholder="Name">
-              <input type="text" placeholder="Email Address">
-              <input type="text" placeholder="Phone Number">
-              <textarea rows="3" placeholder="Message"></textarea>
-              <button type="button" class="btn">Send</button>
-            </form>
-          </div>
-        </section>
+        <div class="section3 row">
+          <h2 class="text-uppercase">contact me</h2>
+          <div class="star dark-star"><i class="fa fa-star" aria-hidden="true"></i></div>
+          <form class="bl-form">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email Address">
+            <input type="text" placeholder="Phone Number">
+            <textarea rows="3" placeholder="Message"></textarea>
+            <button type="button" class="btn text-white">Send</button>
+          </form>
+        </div>
         <!-- fine terza sezione -->
       </main>
       <!-- fine parte centrale -->
       <!-- inizio piè di pagina -->
-      <footer>
+      <footer class="text-white">
         <div class="row footer-top">
           <div class="col-xs-12 col-sm-4">
-            <div class="uppercase">location</div>
+            <div class="text-uppercase">location</div>
             <div>2215 John Daniel Drive Clark, MO 54243</div>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <div class="uppercase">around the web</div>
+            <div class="text-uppercase">around the web</div>
+            <div class="social">
+              <a href="#"><i class="fa fa-facebook img-circle text-white" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-google-plus img-circle text-white" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter img-circle text-white" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-linkedin img-circle text-white" aria-hidden="true"></i></a>
+            </div>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <div class="uppercase">about </div>
+            <div class="text-uppercase">about freelancer</div>
+            <div>Freelancer is a free to use, open source Bootstrap theme created by <span>Start Bootstrap<span>.</div>
           </div>
         </div>
-        <div class="footer-bottom">
+        <div class="row footer-bottom">
           Copyright <i class="fa fa-copyright" aria-hidden="true"></i> your website 2019
         </div>
       </footer>
