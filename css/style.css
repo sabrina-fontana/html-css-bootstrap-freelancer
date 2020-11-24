@@ -119,8 +119,8 @@ form {
   background-color: #3a546d;
 }
 
-.footer-top [class*="col-"] {
-  padding: 20px 30px;
+.footer-top [class*="col-"] .col-content {
+  padding: 20px;
 }
 
 footer .social i {
@@ -156,24 +156,27 @@ footer .social i {
     width: 150px;
   }
 
-  .footer-top>div:first-child {
+/* .col-content per non modificare i padding delle col */
+  .footer-top>div:first-child .col-content {
     padding-left: 60px;
+    padding-right: 0;
   }
 
-  .footer-top>div:last-child {
+  .footer-top>div:last-child .col-content {
     padding-right: 60px;
+    padding-left: 0;
   }
 }
 
 /* da md in su */
 @media screen and (min-width: 992px) {
-  .footer-top>div:first-child {
-    padding-left: 150px;
+  .footer-top>div:first-child .col-content {
+    padding-left: 120px;
     padding-right: 0;
   }
 
-  .footer-top>div:last-child {
-    padding-right: 150px;
+  .footer-top>div:last-child .col-content {
+    padding-right: 120px;
     padding-left: 0;
   }
 }
